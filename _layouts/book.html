@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+
+        <!-- Docs page layout -->
+        <div class="bs-docs-header" id="content" tabindex="-1">
+            <div class="container">
+                <h1>
+                    {{ page.title }}               
+
+                </h1>
+
+                <p> <a style="color:white" href="{{site.url}}">{{ site.author.name }}</a>
+                    <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#booklist">
+                        Other Books
+                    </button></p>
+            </div>
+        </div>
+
+        <div class="container  bs-docs-container">
+            <div class = "row">
+                <div class="col-md-9" role="main">
+                    <!-- chapters -->
+                    {% assign chapters = site[page.id] %}
+                    
+                    {% for chapter in chapters %}
+                    {% if forloop.last == false%}
+                    <div class='chapter' id="{{ forloop.index  }}">
+                        <h2>{{ chapter.title }}</h2>
+
+                        {{ chapter.content }}
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="col-md-3" role="complementary">  
+                    <!-- table of contents -->
+                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                        <ul class="nav bs-docs-sidenav">
+
+                            {% for chapter in chapters %}
+                            {% if forloop.last == false %}
+                            <li><a href="#{{ forloop.index  }}">{{ forloop.index  }}. {{ chapter.title }}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <a class="back-to-top" href="#top">
+                            Back to top
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        {% include booklist.html %}
+
+        {% include footer.html %}
+    </body>
+</html>

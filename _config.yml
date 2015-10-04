@@ -1,0 +1,37 @@
+###########
+# site.title, site.author.name
+
+author:
+  name: Xinghuang Xu
+
+baseurl: "/books/" # the subpath of your site, e.g. /blog/
+url: "http://xinghuangxu.com" # the base hostname & protocol for your sit
+
+########
+# more settings
+
+collections:
+  machine_learning:
+      output: true
+  computation_theory:
+      output: true
+  a_book_about_me:
+      output: true
+  
+
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+exclude:
+- README.md
+
+
+safe: true
+lsi: false

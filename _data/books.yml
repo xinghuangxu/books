@@ -1,0 +1,12 @@
+books:
+    - name: A Book About Me
+      category: Non-fiction
+      path: a_book_about_me
+    
+    - name: Machine Learning
+      category: Computer Science
+      path: machine_learning
+    
+    - name: Computation Theory
+      category: Computer Science
+      path: computation_theory
