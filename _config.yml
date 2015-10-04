@@ -4,7 +4,7 @@
 author:
   name: Xinghuang Xu
 
-baseurl: "/books/" # the subpath of your site, e.g. /blog/
+baseurl: "http://xinghuangxu.com/books/" # the subpath of your site, e.g. /blog/
 url: "http://xinghuangxu.com" # the base hostname & protocol for your sit
 
 ########
