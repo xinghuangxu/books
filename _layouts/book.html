@@ -27,7 +27,7 @@
                     {% for chapter in chapters %}
                     {% if forloop.last == false%}
                     <div class='chapter' id="{{ forloop.index  }}">
-                        <h2>{{ chapter.title }}</h2>
+                        <h1>{{ chapter.title }}</h1>
 
                         {{ chapter.content }}
                     </div>
