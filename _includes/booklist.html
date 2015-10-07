@@ -15,7 +15,6 @@
                                 <th>#</th>
                                 <th>Name</th>
                                 <th>Category</th>
-                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -24,9 +23,9 @@
                             {% for book in books %}
                             <tr>
                                 <th scope="row">{{ forloop.index }}</th>
-                                <td>{{ book.name }}</td>
+                                <td><a href="../{{book.path}}">{{ book.name }}</a></td>
                                 <td>{{ book.category }}</td>
-                                <td><a href="{{site.baseurl}}{{book.path}}"><button type="button" class="btn btn-default">Read</button></a></td>
+                                <!--<td><a href="{"><button type="button" class="btn btn-default">Read</button></a></td>-->
                             </tr>
                             {% endfor %}
                         </tbody>
