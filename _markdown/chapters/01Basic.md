@@ -157,8 +157,6 @@ Very well then I contradict myself,
 (I am large, I contain multitudes.)
 
 ##Code Highlight
-
-
 ~~~html
 <pre> This is html</pre>
 <div>this is some preformatted code</div>
