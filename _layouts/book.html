@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body>
+{% include head.html %}
+<body>
 
-        <!-- Docs page layout -->
-        <div class="bs-docs-header" id="content" tabindex="-1">
-            <div class="container">
-                <h1>
-                    {{ page.title }}               
+<!-- Docs page layout -->
+<div class="bs-docs-header" id="content" tabindex="-1">
+    <div class="container">
+        <h1>
+            {{ page.title }}
 
-                </h1>
+        </h1>
 
-                <p> <a style="color:white" href="{{site.url}}">{{ site.author.name }}</a>
-                    <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#booklist">
-                        Other Books
-                    </button></p>
+        <p><a style="color:white" href="{{site.url}}">{{ site.author.name }}</a>
+            <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#booklist">
+                Other Books
+            </button>
+        </p>
+    </div>
+</div>
+
+<div class="container  bs-docs-container">
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <!-- chapters -->
+            {% assign chapters = site[page.id] %}
+
+            {% for chapter in chapters %}
+            {% if forloop.last == false%}
+            <div class='chapter' id="{{ forloop.index  }}">
+                <h1>{{ chapter.title }}</h1>
+
+                {{ chapter.content }}
             </div>
+            {% endif %}
+            {% endfor %}
+            <div id="end"></div>
         </div>
 
-        <div class="container  bs-docs-container">
-            <div class = "row">
-                <div class="col-md-9" role="main">
-                    <!-- chapters -->
-                    {% assign chapters = site[page.id] %}
-                    
-                    {% for chapter in chapters %}
-                    {% if forloop.last == false%}
-                    <div class='chapter' id="{{ forloop.index  }}">
-                        <h1>{{ chapter.title }}</h1>
+        <div class="col-md-3" role="complementary">
+            <!-- table of contents -->
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                <ul class="nav bs-docs-sidenav">
 
-                        {{ chapter.content }}
-                    </div>
+                    {% for chapter in chapters %}
+                    {% if forloop.last == false %}
+                    <li><a href="#{{ forloop.index  }}">{{ forloop.index }}. {{ chapter.title }}</a></li>
                     {% endif %}
                     {% endfor %}
-                </div>
-
-                <div class="col-md-3" role="complementary">  
-                    <!-- table of contents -->
-                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
-                        <ul class="nav bs-docs-sidenav">
-
-                            {% for chapter in chapters %}
-                            {% if forloop.last == false %}
-                            <li><a href="#{{ forloop.index  }}">{{ forloop.index  }}. {{ chapter.title }}</a></li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                        <a class="back-to-top" href="#top">
-                            Back to top
-                        </a>
-                    </nav>
-                </div>
-
-            </div>
+                </ul>
+                <a class="back-to-top" href="#end">
+                    Go to end
+                </a>
+                <a style="margin-top:0;padding-top:0;" class="back-to-top" href="#top">
+                    Back to top
+                </a>
+            </nav>
         </div>
 
-        <!-- Modal -->
-        {% include booklist.html %}
+    </div>
+</div>
 
-        {% include footer.html %}
-    </body>
+<!-- Modal -->
+{% include booklist.html %}
+
+{% include footer.html %}
+</body>
 </html>
