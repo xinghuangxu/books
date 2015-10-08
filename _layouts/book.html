@@ -8,13 +8,14 @@
     <div class="container">
         <h1>
             {{ page.title }}
+            <a type="button" class="btn btn-default" href="../">
+                Bookstore
+            </a>
 
         </h1>
 
         <p><a style="color:white" href="{{site.url}}">{{ site.author.name }}</a>
-            <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#booklist">
-                Other Books
-            </button>
+
         </p>
     </div>
 </div>
@@ -60,9 +61,8 @@
     </div>
 </div>
 
-<!-- Modal -->
-{% include booklist.html %}
-
 {% include footer.html %}
+
+
 </body>
 </html>

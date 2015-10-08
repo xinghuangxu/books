@@ -92,4 +92,5 @@ Choose that by hand, there is no automatic ways to do it.
 * Run K means with 1,2, ... clusters and plot their Cost function J
 * Its worth a shot but don't have high expectation on that.
 ![Elbow Method](chapters/10/3.PNG){: .img-responsive }
-
+* Sometimes, you're running K-means to get clusters to use for some later/downstream purpose.
+Evaluate K-means based on a metric for how well it performs for that later purpose.
