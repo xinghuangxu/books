@@ -5,36 +5,36 @@ title: Basic
 
 ##Make text italic by surrounding text in _.
 
-```
+~~~
 _This is Xinghuang Xu._
-```
+~~~
 _This is Xinghuang Xu._
 
 ---
 
 ##Make text ***bold** by surrounding text in **.
 
-```
+~~~
 **I really like you.**
-```
+~~~
 
 **I really like you.**
 
 ---
 
 ##Make text both _italics_ and **bold**.
-```
+~~~
 "**_Of course_**," she whispered. Then, she shouted: "All I need is a little moxie!"
-```
+~~~
 
 "**_Of course_**," she whispered. Then, she shouted: "All I need is a little moxie!"
 
 ---
 
 ##Create link
-```
+~~~
 [Search for it](http://www.google.com)
-```
+~~~
 [Search for it](http://www.google.com)
 
 ---
@@ -61,9 +61,9 @@ Well, do I have [the website for you][another fun place]!
 ---
 
 ##Embed image
-```
+~~~
 ![A representation of Octdre Catburn](http://octodex.github.com/images/octdrey-catburn.jpg)
-```
+~~~
 ![A representation of Octdre Catburn](http://octodex.github.com/images/octdrey-catburn.jpg)
 
 ~~~
@@ -76,12 +76,12 @@ Well, do I have [the website for you][another fun place]!
 ~~~
 
 ##Blockquote
-```
+~~~
 > In a few moments he was barefoot, his stockings folded in his pockets and his
   canvas shoes dangling by their knotted laces over his shoulders and, picking a
   pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
   the slope of the breakwater.
-```
+~~~
 
 > In a few moments he was barefoot, his stockings folded in his pockets and his
   canvas shoes dangling by their knotted laces over his shoulders and, picking a

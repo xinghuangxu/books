@@ -21,7 +21,7 @@ collections:
       output: true
   
 
-markdown: redcarpet
+markdown: kramdown
 #highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"

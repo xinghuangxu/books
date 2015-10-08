@@ -4,109 +4,109 @@ title: Latex Math
 
 ##Symbols
 
-```
+~~~
 \forall x \in X, \quad \exists y \leq \epsilon $$
-```
+~~~
 $$ \forall x \in X, \quad \exists y \leq \epsilon $$
 
 ##Greek letters
-```
-\alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \Phi
-```
+~~~
+\alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \Phi, \mu
+~~~
 <div>
-$$ \alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \Phi $$
+$$ \alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \Phi, \mu $$
 </div>
 
 ##Operators
-```
+~~~
 \cos (2\theta) = \cos^2 \theta - \sin^2 \theta
-```
+~~~
 
 $$ \cos (2\theta) = \cos^2 \theta - \sin^2 \theta $$
 
-```
+~~~
 \lim_{x \to \infty} \exp(-x) = 0
-```
+~~~
 
 $$ \lim_{x \to \infty} \exp(-x) = 0 $$
 
-```
+~~~
 a \bmod b
-```
+~~~
 $$ a \bmod b $$
 
-```
+~~~
 x \equiv a \pmod b
-```
+~~~
 _\pmod_ comes with parenthesis
 $$ x \equiv a \pmod b $$ 
 
 ##Powers and indices
-```
+~~~
 k_{n+1} = n^2 + k_n^2 - k_{n-1}
-```
+~~~
 <div>
 $$ k_{n+1} = n^2 + k_n^2 - k_{n-1} $$
 </div>
 
-```
+~~~
 f(n)=n^5 + 4n^2 +  2 |_{n=17}
-```
+~~~
 <div>
 $$ f(n)=n^5 + 4n^2 +  2 |_{n=17}$$
 </div>
 
 ##Factions and Binomial
-```
+~~~
 \frac{n!}{k!(n-k)!} = \binom{n}{k}
 
 \frac{n!}{k!(n-k)!} = {n \choose k}
-```
+~~~
 <div>
 $$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$
 </div>
 
-```
+~~~
 \frac{\frac{1}{x} + \frac{1}{y}} {y-z}
-```
+~~~
 <div>
 $$ \frac{\frac{1}{x} + \frac{1}{y}} {y-z}$$
 </div>
 
 
 ##Roots
-```
+~~~
  \sqrt{\frac{a}{b}} 
-```
+~~~
 $$ \sqrt{\frac{a}{b}} $$
 
-```
+~~~
 \sqrt[n]{1+x+x^2+x^3+\ldots}
-```
+~~~
 $$ \sqrt[n]{1+x+x^2+x^3+\ldots} $$
 
 ##Sums and Integrals
 
-```
+~~~
 \sum_{i=1}^{10} t_i
-```
+~~~
 <div>
 $$ \sum_{i=1}^{10} t_i $$
 </div>
 
-```
+~~~
 \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x
-```
+~~~
 <div>
 $$ \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x $$
 </div>
 
 ##Brackets, braces and delimiters
-```
+~~~
 ( a ), [ b ], \{ c \}, | d |, \| e \|,
 \langle f \rangle, \lfloor g \rfloor,
 \lceil h \rceil, \ulcorner i \urcorner
-```
+~~~
 <div>
 $$
 ( a ), [ b ], \{ c \}, | d |, \| e \|,
@@ -117,7 +117,7 @@ $$
 
 
 ##Matrices and Arrays
-```
+~~~
 <div>
  \begin{matrix}
   a & b & c \\
@@ -125,7 +125,7 @@ $$
   g & h & i
  \end{matrix}
 </div>
-```
+~~~
 <div>
  \begin{matrix}
   a & b & c \\
@@ -135,7 +135,7 @@ $$
 </div>
 
 
-```
+~~~
 <div>
 $$
 A_{m,n} = 
@@ -147,7 +147,7 @@ A_{m,n} =
  \end{pmatrix}
 $$
 </div>
-```
+~~~
 <div>
 $$
 A_{m,n} = 
