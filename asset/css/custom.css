@@ -11,3 +11,6 @@ and open the template in the editor.
 body{
     font-size: 18px;
 }
+.img-responsive{
+    border:solid 1px;
+}
