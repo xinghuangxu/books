@@ -2,8 +2,8 @@
 title: Anomaly Detection
 ---
 
-## Anomaly Detection
-* Density estimation  
+
+### Density estimation  
  Traning set: $x^1, x^2,...,x^m \in R^{n} $
  $$ p(x) = p(x_1;\mu_1,\sigma_1^2)p(x_2;\mu_2,\sigma_2^2)...p(x_n;\mu_n,\sigma_n^2) = \prod_{j=1}^n p(x_j;\mu_j,\sigma_j^2)$$
  

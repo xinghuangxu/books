@@ -19,7 +19,8 @@ collections:
       output: true
   markdown:
       output: true
-  
+  software_analytics:
+      output: true
 
 markdown: kramdown
 #highlighter: rouge
